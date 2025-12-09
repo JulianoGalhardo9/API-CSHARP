@@ -8,6 +8,11 @@
 		{
             Errors = new List<string> { message };
 		}
+
+		public ResponsesErrorMessagesJson(List<string> messages)
+		{
+			Errors = messages;
+		}
 		
 	}
 }

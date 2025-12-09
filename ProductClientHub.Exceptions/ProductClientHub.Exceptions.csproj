@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ExceptionsBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExceptionsBase\" />
+  </ItemGroup>
 </Project>

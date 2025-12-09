@@ -34,5 +34,8 @@
     <ProjectReference Include="..\ProductClientHub.Communication\ProductClientHub.Communication.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\ProductClientHub.Exceptions\ProductClientHub.Exceptions.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
