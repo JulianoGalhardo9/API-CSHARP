@@ -17,18 +17,21 @@
   <ItemGroup>
     <Compile Remove="WeatherForecast.cs" />
     <Compile Remove="UseCases\Clients\Register\EmptyClass.cs" />
+    <Compile Remove="Filters\ResponseErrorMessageJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="UseCases\" />
     <None Remove="UseCases\Clients\" />
     <None Remove="UseCases\Clients\Register\" />
+    <None Remove="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="UseCases\" />
     <Folder Include="UseCases\Clients\" />
     <Folder Include="UseCases\Clients\Register\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProductClientHub.Communication\ProductClientHub.Communication.csproj">

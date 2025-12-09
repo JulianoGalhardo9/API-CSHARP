@@ -14,28 +14,11 @@ public class ClientsController : ControllerBase
     [ProducesResponseType(typeof(ResponseClientJson), StatusCodes.Status400BadRequest)]
     public IActionResult Register([FromBody] RequestClientJson request)
     {
-        try
-        {
-            var useCase = new RegisterClientUseCase();
+        var useCase = new RegisterClientUseCase();
 
-            var response = useCase.Execute(request);
+        var response = useCase.Execute(request);
 
-            return Created(string.Empty, response);
-        }
-        catch (ProductClientHubException ex)
-        {
-            var errors = ex.GetErrors();
-
-            return BadRequest(new ResponsesErrorMessagesJson(errors));
-        }
-        catch
-        {
-            return StatusCode(
-                StatusCodes.Status500InternalServerError,
-                new ResponsesErrorMessagesJson("Erro desconhecido")
-);
-
-        }
+        return Created(string.Empty, response);
     }
 
     [HttpPut]
